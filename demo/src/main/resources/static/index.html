@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+        data-sap-ui-libs="sap.m"
+        data-sap-ui-theme="sap_bluecrystal"
+        data-sap-ui-bindingSyntax="complex"
+        data-sap-ui-resourceroots='{
+        "shahezad":"./"
+        }'
+        
+        ></script>
+        <script>
+      
+        /* var oBtn = new sap.m.Button({
+        		text:"DontClickMe",
+        		press:function(){
+        		alert("bhok me ghus ja");	
+        		} 		
+        }); */
+        var oView = new sap.ui.view({
+        	viewName: "shahezad.view.App",
+        	type: "XML"
+        });
+        var oMain = new sap.ui.view({
+        	viewName: "shahezad.view.Main",
+        	type: "XML"
+        });
+        oView.byId("myApp").addPage(oMain);
+        oView.placeAt("content");
+        </script>
+</head>
+<body class="sapUiBody">
+<div id="content"></div>
+</body>
+</html>>
